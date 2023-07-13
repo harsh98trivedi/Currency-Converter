@@ -43,7 +43,7 @@ function convertCurrency() {
   let convertedAmount = (amount / fromRate) * toRate;
 
   let result = document.getElementById("result");
-  result.textContent = `Converted Amount: ${convertedAmount.toFixed(2)} ${toCurrency}`;
+  result.innerHTML = 'Converted Amount: <span style="color: #1E88E5; font-size: 1.5rem;">' + convertedAmount.toFixed(2) + ' ' + '</span>' + toCurrency;
 }
 
 fetch("https://api.exchangerate-api.com/v4/latest/USD")
