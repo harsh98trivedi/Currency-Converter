@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Currency Converter</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.17/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+    </style>
+</head>
+
+<body class="bg-gray-100 grid place-content-center items-center min-h-screen text-center"
+    style="font-family: 'Quicksand', sans-serif;">
+    <div class="bg-white p-5 rounded-xl shadow-lg max-w-2xl">
+        <h1 class="text-2xl font-bold my-3">Currency Converter</h1>
+        <div class="flex justify-between my-3">
+            <label class="grid place-content-center" for="from-currency">Convert From:</label>
+            <select class="border border-gray-300 rounded px-3 py-2" id="from-currency" name="from-currency"></select>
+        </div>
+        <div class="flex justify-between my-4">
+            <label class="grid place-content-center" for="to-currency">Convert To:</label>
+            <select class="border border-gray-300 rounded px-3 py-2" id="to-currency" name="to-currency"></select>
+        </div>
+        <label class="block mb-2" for="amount">Enter an Amount:</label>
+        <input class="border border-gray-300 rounded px-3 py-2 mb-4 w-full" type="number" id="amount" name="amount" onkeyup="convertCurrency()" autofocus>
+        <button class="bg-black text-white py-2 px-4 rounded"
+            onclick="convertCurrency()">Convert</button>
+        <p id="result" class="mt-4 text-lg font-bold"></p>
+        <script src="script.js"></script>
+    </div>
+    <p class="mx-auto my-5">Made with <i class="fa-solid fa-heart text-red-600"></i> by <a
+            href="https://htlink.netlify.app/" target="_blank"><strong class="underline text-blue-600">Harsh
+                Trivedi</strong></a></p>
+</body>
+
+</html>
