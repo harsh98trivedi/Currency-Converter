@@ -10,8 +10,6 @@ The Currency Converter is a web application that allows users to convert amounts
 
 ## Features
 
-## Features
-
 - Real-time exchange rates: The Currency Converter fetches the latest exchange rates from an API to ensure accurate and up-to-date currency conversions.
 
 - Currency selection: Users can select the currencies they want to convert from and to using dropdown menus. The available currencies are dynamically populated based on the exchange rate data.
